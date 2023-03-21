@@ -1,0 +1,31 @@
+-- create a table
+CREATE TABLE Movies 
+(id INTEGER PRIMARY KEY,
+title text,
+genre text,
+review_for_10 INTEGER,
+Artist text,
+Skills text,
+role text
+);
+
+-- to insert a TABLE
+insert into Movies values
+(1,"vikram", "Action",10, "kamalahasan","all_rounder","hero");
+insert into Movies values
+(2,"Ironman", "fantacy",10, "RobertDowneyjr","actor",
+"superhero");
+insert into Movies values
+(3,"Ironman","fantacy",10, "RobertDowneyjr","suoerhero","stunts");
+insert into Movies values
+(4,"KGF", "action_raw",10, "yash","gangster","hero");
+
+-- to update a data to that feild
+
+update Movies set Artist = "peter porker",title= "spiderman" where id =2;
+update Movies set Artist = "peter porker",title= "shakespeare" where id = 3;
+
+-- to delete a data
+delete from Movies where id = 3;
+
+select * from Movies;
